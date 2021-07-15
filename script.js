@@ -9,3 +9,8 @@ function de_mirage()
     document.getElementById("de_mirage").style.display = "block"
     document.getElementById("de_dust2").style.display = "none"
 }
+
+function set_up()
+{
+    
+}

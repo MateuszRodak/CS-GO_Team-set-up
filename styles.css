@@ -80,3 +80,40 @@ img
 {
     clear: both;
 }
+
+input, button
+{
+    float: left;
+    margin: 5%;
+    width: 80%;
+    text-align: center;
+    margin-top: 10%;
+}
+
+#player1
+{
+    background-color: purple;
+}
+#player2
+{
+    background-color: green;
+}
+#player3
+{
+    background-color: blue;
+}
+#player4 
+{
+    background-color: orange;
+}
+#player5
+{
+    background-color: yellow;
+}
+
+#bsetup
+{
+    font-size: 30px;
+    background-color: teal;
+    color: wheat;
+}
