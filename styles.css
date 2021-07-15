@@ -36,12 +36,21 @@ body
 {
     background-color: orange;
     float: left;
-    height: 100%;
-    width: 27%;
+    height: 80%;
+    width: 100%;
 }
 
 #setup
 {
     background-color: turquoise;
-    vertical-align: bottom;
+    clear: both;
+    height: 20%;
+}
+
+#menu
+{
+    background-color: hotpink;
+    float: left;
+    height: 100%;
+    width: 27%;
 }
