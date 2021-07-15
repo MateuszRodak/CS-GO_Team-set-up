@@ -5,46 +5,52 @@ body
 
 #page
 {
-    margin-top: 10%;
-    margin-bottom: 10%;
-    width: auto;
-    height: 600px;
-    display: block;
-    background-color: rgb(56, 46, 46);
+    background-color: greenyellow;
+    height: 80%;
+    padding: 2%;
 }
 
-.naglowek
-{
-    background-color: brown;
-    text-align: center;
-}
-
-.map_choose
-{
-    background-color: cyan;
-    /* display: inline-block; */
-    width: 25%;
-    height: 600px;
-    float: left;
-}
-
-.map_view
+#logo
 {
     background-color: red;
-    /* display: inline-block; */
-    width: auto;
-    /* margin-left: 25%; */
-    width: 50%;
-    height: 600px;
-    float: left;
+    height: 10%;
 }
 
-.players
+#choosemap
 {
-    /* display: inline-block; */
-    background-color: royalblue;
-    width: 25%;
-    /* margin-left: 75%; */
-    height: 600px;
+    background-color: yellow;
     float: left;
+    height: 100%;
+    width: 27%;
+}
+
+#map
+{
+    background-color: green;
+    float: left;
+    height: 100%;
+    width: 46%;
+}
+
+#players
+{
+    background-color: orange;
+    float: left;
+    height: 80%;
+    width: 100%;
+}
+
+#setup
+{
+    background-color: turquoise;
+    clear: both;
+    height: 20%;
+}
+
+#menu
+{
+    background-color: hotpink;
+    float: left;
+    height: 100%;
+    width: 27%;
 }
