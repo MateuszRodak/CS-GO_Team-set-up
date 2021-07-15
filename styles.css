@@ -11,11 +11,20 @@ body
     padding: 2%;
 }
 
-#logo
+#head
 {
     background-color: red;
     height: 10%;
     min-height: 10%;
+}
+
+#logo
+{
+    background-color: blue;
+    margin-bottom: auto;
+    text-align: center;
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 #choosemap
