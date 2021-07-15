@@ -5,5 +5,43 @@ body
 
 #page
 {
-    background-color: black;
+    background-color: greenyellow;
+    height: 80%;
+    padding: 2%;
+}
+
+#logo
+{
+    background-color: red;
+    height: 10%;
+}
+
+#choosemap
+{
+    background-color: yellow;
+    float: left;
+    height: 100%;
+    width: 27%;
+}
+
+#map
+{
+    background-color: green;
+    float: left;
+    height: 100%;
+    width: 46%;
+}
+
+#players
+{
+    background-color: orange;
+    float: left;
+    height: 100%;
+    width: 27%;
+}
+
+#setup
+{
+    background-color: turquoise;
+    vertical-align: bottom;
 }
