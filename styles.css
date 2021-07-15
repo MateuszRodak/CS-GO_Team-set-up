@@ -72,5 +72,11 @@ img
 
 #de_dust2
 {
-    visibility: hidden;
+    position: sticky;
+    display: none;
+}
+
+.button
+{
+    clear: both;
 }
