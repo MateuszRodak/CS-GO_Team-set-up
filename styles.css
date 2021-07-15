@@ -69,3 +69,8 @@ img
     min-height: 100%;
     width: 27%;
 }
+
+#de_dust2
+{
+    visibility: hidden;
+}
