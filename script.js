@@ -41,21 +41,25 @@ function set_up()
         b=Math.floor(Math.random() * maplen.length);
     }
     c=Math.floor(Math.random() * maplen.length);
-    while(c==b)
+    while(c==b || c== a)
     {
         c=Math.floor(Math.random() * maplen.length);
     }
     var d=Math.floor(Math.random() * maplen.length);
-    while(d==c)
+    while(d==c || d==b || d== a)
     {
         d=Math.floor(Math.random() * maplen.length);
     }
     var e=Math.floor(Math.random() * maplen.length);
-    while(e==d)
+    while(e==d || e==c || e==b || e==a)
     {
         e=Math.floor(Math.random() * maplen.length);
     }
-
+    document.getElementById('test').innerHTML=a
+    document.getElementById('test').innerHTML+=b
+    document.getElementById('test').innerHTML+=c
+    document.getElementById('test').innerHTML+=d;
+    document.getElementById('test').innerHTML+=e;
     changeColor(a,b,c,d,e)
 }
 

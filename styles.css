@@ -67,6 +67,13 @@ img
     min-height: 80%;
 }
 
+input
+{
+    font-size: 28px;
+    color:red;
+    font-weight: bold;
+}
+
 #setup
 {
     background-color: turquoise;
