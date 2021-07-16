@@ -22,7 +22,7 @@ body
 {
     background-color: red;
     height: 10%;
-    min-height: 10%;
+    min-height: 60px;
 }
 
 #logo
