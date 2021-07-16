@@ -26,6 +26,7 @@ function de_train()
 
 function set_up()
 { 
+    var a,b,c,d,e
     var maplen = document.getElementsByClassName(actualMap);
 
    // for(var i=0;i<5;i++){
@@ -33,11 +34,27 @@ function set_up()
  //   }
   //  document.getElementById('test').innerHTML=a;
 
-    var a=Math.floor(Math.random() * maplen.length);
-    var b=Math.floor(Math.random() * maplen.length);
-    var c=Math.floor(Math.random() * maplen.length);
+    a=Math.floor(Math.random() * maplen.length);
+    b=Math.floor(Math.random() * maplen.length);
+    while(b==a)
+    {
+        b=Math.floor(Math.random() * maplen.length);
+    }
+    c=Math.floor(Math.random() * maplen.length);
+    while(c==b)
+    {
+        c=Math.floor(Math.random() * maplen.length);
+    }
     var d=Math.floor(Math.random() * maplen.length);
+    while(d==c)
+    {
+        d=Math.floor(Math.random() * maplen.length);
+    }
     var e=Math.floor(Math.random() * maplen.length);
+    while(e==d)
+    {
+        e=Math.floor(Math.random() * maplen.length);
+    }
 
     changeColor(a,b,c,d,e)
 }
@@ -59,17 +76,17 @@ function changeColor(num1, num2, num3, num4, num5)
 }
 
 var trd = document.getElementsByClassName('trd');
-    var works = true;
+var show_marks_on_map = true;
 
 function showmap()
 {
-        if(works)
+        if(show_marks_on_map)
             {
                 for (var i = 0; i < trd.length; i ++) 
                     {
                         trd[i].style.display = 'none';
                     }
-                works = false;
+                show_marks_on_map = false;
             }
         else
             {
@@ -77,7 +94,6 @@ function showmap()
                     {
                         trd[i].style.display = 'block';
                     }
-                works=true;
+                show_marks_on_map=true;
             }
-    
 }
