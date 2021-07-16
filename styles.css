@@ -90,6 +90,12 @@ img
     display: block;
 }
 
+#de_train 
+{
+    position: relative;
+    display: block;
+}
+
 .button
 {
     clear: both;
