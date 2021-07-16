@@ -109,6 +109,18 @@ input
     display: none;
 }
 
+#de_cache 
+{
+    position: relative;
+    display: none;
+}
+
+#de_inferno 
+{
+    position: relative;
+    display: none;
+}
+
 .button
 {
     clear: both;

@@ -4,6 +4,8 @@ function de_dust2()
 {
     document.getElementById("de_mirage").style.display = "none"
     document.getElementById("de_train").style.display = "none"
+    document.getElementById("de_cache").style.display = "none"
+    document.getElementById("de_inferno").style.display = "none"
     document.getElementById("de_dust2").style.display = "block"
     actualMap = "de_dust2"
 }
@@ -13,6 +15,8 @@ function de_mirage()
     document.getElementById("de_mirage").style.display = "block"
     document.getElementById("de_train").style.display = "none"
     document.getElementById("de_dust2").style.display = "none"
+    document.getElementById("de_cache").style.display = "none"
+    document.getElementById("de_inferno").style.display = "none"
     actualMap = "de_mirage"
 }
 
@@ -21,7 +25,29 @@ function de_train()
     document.getElementById("de_mirage").style.display = "none"
     document.getElementById("de_dust2").style.display = "none"
     document.getElementById("de_train").style.display = "block"
+    document.getElementById("de_cache").style.display = "none"
+    document.getElementById("de_inferno").style.display = "none"
     actualMap = "de_train"
+}
+
+function de_cache()
+{
+    document.getElementById("de_mirage").style.display = "none"
+    document.getElementById("de_dust2").style.display = "none"
+    document.getElementById("de_train").style.display = "none"
+    document.getElementById("de_cache").style.display = "block"
+    document.getElementById("de_inferno").style.display = "none"
+    actualMap = "de_cache"
+}
+
+function de_inferno()
+{
+    document.getElementById("de_mirage").style.display = "none"
+    document.getElementById("de_dust2").style.display = "none"
+    document.getElementById("de_train").style.display = "none"
+    document.getElementById("de_cache").style.display = "none"
+    document.getElementById("de_inferno").style.display = "block"
+    actualMap = "de_inferno"
 }
 
 function set_up()
