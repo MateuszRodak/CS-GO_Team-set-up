@@ -21,5 +21,29 @@ function de_train()
 
 function set_up()
 {
+    document.getElementsByClassName('mirage')[0].style.display = "none"
+}
+
+var trd = document.getElementsByClassName('trd');
+    var works = true;
+
+function showmap()
+{
+        if(works)
+            {
+                for (var i = 0; i < trd.length; i ++) 
+                    {
+                        trd[i].style.display = 'none';
+                    }
+                works = false;
+            }
+        else
+            {
+                for (var i = 0; i < trd.length; i ++) 
+                    {
+                        trd[i].style.display = 'block';
+                    }
+                works=true;
+            }
     
 }

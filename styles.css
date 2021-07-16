@@ -47,7 +47,6 @@ body
 
 img
 {
-   
     width: 100%;
     object-fit: scale-down;
 }
@@ -93,7 +92,7 @@ img
 #de_train 
 {
     position: relative;
-    display: block;
+    display: none;
 }
 
 .button
@@ -149,6 +148,14 @@ input, button
     top: 5px;
     left: 20px;
 }
+
+.trd:hover
+{
+    visibility: hidden;
+    transition: 0.3s;
+}
+
+
 
 .choose_map_button
 {
