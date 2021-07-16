@@ -143,3 +143,21 @@ input, button
     top: 5px;
     left: 20px;
 }
+
+.choose_map_button
+{
+    background-color: chartreuse;
+    height: 30px;
+    
+}
+
+.choose_map_button:hover
+{
+    background-color: darkgreen;
+}
+
+.map_choose_head
+{
+    text-align: center;
+    margin-top: 10px;
+}
