@@ -1,3 +1,8 @@
+:root
+{
+    --trdcolor--: rgb(248, 16, 16);
+}
+
 body
 {
     background-color: beige;
@@ -8,7 +13,7 @@ body
     background-color: greenyellow;
     height: 80%;
     min-height: 80%;
-    padding: 2%;
+    padding: 5%;
 }
 
 #head
@@ -46,7 +51,7 @@ body
 }
 
 img
-{
+{   
     width: 100%;
     object-fit: scale-down;
 }
@@ -142,20 +147,12 @@ input, button
 	height: 0;
 	border-left: 10px solid transparent;
 	border-right: 10px solid transparent;
-	border-top: 20px solid rgb(248, 16, 16);
+	border-top: 20px solid var(--trdcolor--);
     position: absolute;
     z-index: 20;
     top: 5px;
     left: 20px;
 }
-
-.trd:hover
-{
-    visibility: hidden;
-    transition: 0.3s;
-}
-
-
 
 .choose_map_button
 {

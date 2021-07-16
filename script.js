@@ -21,11 +21,20 @@ function de_train()
 
 function set_up()
 {
-    document.getElementsByClassName('mirage')[0].style.display = "none"
+  changeColor('mirage',0,1,2,3,4)
+}
+
+function changeColor(map, num1, num2, num3, num4, num5)
+{
+    document.getElementsByClassName(map)[num1].style.borderTopColor = "blue"
+    document.getElementsByClassName(map)[num2].style.borderTopColor = "purple"
+    document.getElementsByClassName(map)[num3].style.borderTopColor = "yellow"
+    document.getElementsByClassName(map)[num4].style.borderTopColor = "green"
+    document.getElementsByClassName(map)[num5].style.borderTopColor = "orange"
 }
 
 var trd = document.getElementsByClassName('trd');
-    var works = true;
+var works = true;
 
 function showmap()
 {
@@ -45,5 +54,4 @@ function showmap()
                     }
                 works=true;
             }
-    
 }
