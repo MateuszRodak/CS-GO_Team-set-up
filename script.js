@@ -52,36 +52,36 @@ function de_inferno()
 
 function set_up()
 { 
-    var a,b,c,d,e
-    var maplen = document.getElementsByClassName(actualMap);
+    var randomNumberA,randomNumberB,randomNumberC,randomNumberD,randomNumberE
+    var mapCollectionOfPoints = document.getElementsByClassName(actualMap);
 
-    a=Math.floor(Math.random() * maplen.length);
-    b=Math.floor(Math.random() * maplen.length);
-    while(b==a)
+    randomNumberA=Math.floor(Math.random() * mapCollectionOfPoints.length);
+    randomNumberB=Math.floor(Math.random() * mapCollectionOfPoints.length);
+    while(randomNumberB==randomNumberA)
     {
-        b=Math.floor(Math.random() * maplen.length);
+        randomNumberB=Math.floor(Math.random() * mapCollectionOfPoints.length);
     }
-    c=Math.floor(Math.random() * maplen.length);
-    while(c==b || c== a)
+    randomNumberC=Math.floor(Math.random() * mapCollectionOfPoints.length);
+    while(randomNumberC==randomNumberB || randomNumberC== randomNumberA)
     {
-        c=Math.floor(Math.random() * maplen.length);
+        randomNumberC=Math.floor(Math.random() * mapCollectionOfPoints.length);
     }
-    var d=Math.floor(Math.random() * maplen.length);
-    while(d==c || d==b || d== a)
+    var randomNumberD=Math.floor(Math.random() * mapCollectionOfPoints.length);
+    while(randomNumberD==randomNumberC || randomNumberD==randomNumberB || randomNumberD== randomNumberA)
     {
-        d=Math.floor(Math.random() * maplen.length);
+        randomNumberD=Math.floor(Math.random() * mapCollectionOfPoints.length);
     }
-    var e=Math.floor(Math.random() * maplen.length);
-    while(e==d || e==c || e==b || e==a)
+    var randomNumberE=Math.floor(Math.random() * mapCollectionOfPoints.length);
+    while(randomNumberE==randomNumberD || randomNumberE==randomNumberC || randomNumberE==randomNumberB || randomNumberE==randomNumberA)
     {
-        e=Math.floor(Math.random() * maplen.length);
+        randomNumberE=Math.floor(Math.random() * mapCollectionOfPoints.length);
     }
-    changeColor(a,b,c,d,e)
-    document.getElementById('test').innerHTML=a
-    document.getElementById('test').innerHTML+=b
-    document.getElementById('test').innerHTML+=c
-    document.getElementById('test').innerHTML+=d;
-    document.getElementById('test').innerHTML+=e; 
+    changeColor(randomNumberA,randomNumberB,randomNumberC,randomNumberD,randomNumberE)
+  //  document.getElementById('test').innerHTML=a
+  //  document.getElementById('test').innerHTML+=b
+ //   document.getElementById('test').innerHTML+=c
+  //  document.getElementById('test').innerHTML+=d;
+ //   document.getElementById('test').innerHTML+=e; 
 }
 
 function changeColor(num1, num2, num3, num4, num5)
