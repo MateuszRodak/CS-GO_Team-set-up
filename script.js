@@ -76,12 +76,12 @@ function set_up()
     {
         e=Math.floor(Math.random() * maplen.length);
     }
+    changeColor(a,b,c,d,e)
     document.getElementById('test').innerHTML=a
     document.getElementById('test').innerHTML+=b
     document.getElementById('test').innerHTML+=c
     document.getElementById('test').innerHTML+=d;
-    document.getElementById('test').innerHTML+=e;
-    changeColor(a,b,c,d,e)
+    document.getElementById('test').innerHTML+=e; 
 }
 
 function changeColor(num1, num2, num3, num4, num5)
