@@ -55,11 +55,6 @@ function set_up()
     var a,b,c,d,e
     var maplen = document.getElementsByClassName(actualMap);
 
-   // for(var i=0;i<5;i++){
-  //      var a=Math.floor(Math.random() * 5)+1;
- //   }
-  //  document.getElementById('test').innerHTML=a;
-
     a=Math.floor(Math.random() * maplen.length);
     b=Math.floor(Math.random() * maplen.length);
     while(b==a)

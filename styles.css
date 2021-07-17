@@ -5,12 +5,12 @@
 
 body
 {
-    background-color: beige;
+    background-color: lightgrey;
 }
 
 #page
 {
-    background-color: greenyellow;
+    background-color: 4A5859;
     height: 80%;
     min-height: 80%;
     padding: 2%;
@@ -20,14 +20,12 @@ body
 
 #head
 {
-    background-color: red;
     height: 10%;
     min-height: 60px;
 }
 
 #logo
 {
-    background-color: blue;
     margin-bottom: auto;
     text-align: center;
     font-size: 50px;
@@ -36,7 +34,7 @@ body
 
 #choosemap
 {
-    background-color: yellow;
+    background-color: BCEBCB;
     float: left;
     height: 100%;
     min-height: 100%;
@@ -45,7 +43,7 @@ body
 
 #map
 {
-    background-color: green;
+    background-color: 4A5859;
     float: left;
     height: 100%;
     width: 50%;
@@ -60,7 +58,7 @@ img
 
 #players
 {
-    background-color: olivedrab;
+    background-color: BCEBCB;
     float: left;
     height: 80%;
     width: 100%;
@@ -76,7 +74,8 @@ input
 
 #setup
 {
-    background-color: turquoise;
+    /* background-color: C5D86D; */
+    background-color: lightgreen;
     clear: both;
     height: 20%;
     min-height: 20%;
@@ -138,29 +137,53 @@ input, button
 #player1
 {
     background-color: purple;
+    min-height: 50px;
 }
 #player2
 {
     background-color: green;
+    min-height: 50px;
 }
 #player3
 {
     background-color: blue;
+    min-height: 50px;
 }
 #player4 
 {
     background-color: orange;
+    min-height: 50px;
 }
 #player5
 {
     background-color: yellow;
+    min-height: 50px;
 }
 
 #bsetup
 {
     font-size: 30px;
-    background-color: teal;
+    height: 50%;
+    background-color: darkgreen;
     color: wheat;
+}
+
+#bsetup:hover
+{
+    background-color: green;
+}
+
+#showmap
+{
+    background-color: darkgreen;
+    height: 8%;
+    color: wheat;
+    font-size: 20px;
+}
+
+#showmap:hover
+{
+    background-color: green;
 }
 
 .trd {
@@ -177,18 +200,22 @@ input, button
 
 .choose_map_button
 {
-    background-color: chartreuse;
+    background-color: 87D68D;
     height: 30px;
+    font-size: larger;
+    font-weight: bold;
     
 }
 
 .choose_map_button:hover
 {
-    background-color: darkgreen;
+    background-color: 93B48B;
 }
 
 .map_choose_head
 {
     text-align: center;
     margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
 }
