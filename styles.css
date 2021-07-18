@@ -120,6 +120,12 @@ input
     display: none;
 }
 
+#de_nuke 
+{
+    position: relative;
+    display: none;
+}
+
 .button
 {
     clear: both;
@@ -226,7 +232,7 @@ input, button
     z-index: 45;
     color: white;
     font-size: 52px;
-    
+    margin-left: 15%;
     background-color: darkblue;
     text-shadow: 2px 2px #000000;
     

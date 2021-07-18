@@ -2,6 +2,7 @@ var actualMap = "de_mirage"
 
 function de_dust2()
 {
+    document.getElementById("de_nuke").style.display = "none"
     document.getElementById("de_mirage").style.display = "none"
     document.getElementById("de_train").style.display = "none"
     document.getElementById("de_cache").style.display = "none"
@@ -14,6 +15,7 @@ function de_dust2()
 
 function de_mirage()
 {
+    document.getElementById("de_nuke").style.display = "none"
     document.getElementById("de_mirage").style.display = "block"
     document.getElementById("de_train").style.display = "none"
     document.getElementById("de_dust2").style.display = "none"
@@ -25,6 +27,7 @@ function de_mirage()
 
 function de_train()
 {
+    document.getElementById("de_nuke").style.display = "none"
     document.getElementById("de_mirage").style.display = "none"
     document.getElementById("de_dust2").style.display = "none"
     document.getElementById("de_train").style.display = "block"
@@ -36,6 +39,7 @@ function de_train()
 
 function de_cache()
 {
+    document.getElementById("de_nuke").style.display = "none"
     document.getElementById("de_mirage").style.display = "none"
     document.getElementById("de_dust2").style.display = "none"
     document.getElementById("de_train").style.display = "none"
@@ -47,6 +51,7 @@ function de_cache()
 
 function de_inferno()
 {
+    document.getElementById("de_nuke").style.display = "none"
     document.getElementById("de_mirage").style.display = "none"
     document.getElementById("de_dust2").style.display = "none"
     document.getElementById("de_train").style.display = "none"
@@ -55,6 +60,20 @@ function de_inferno()
     actualMap = "de_inferno"
      document.getElementById("mapNameOnTop").innerText = actualMap;
 }
+
+
+function de_nuke()
+{
+    document.getElementById("de_nuke").style.display = "block"
+    document.getElementById("de_mirage").style.display = "none"
+    document.getElementById("de_dust2").style.display = "none"
+    document.getElementById("de_train").style.display = "none"
+    document.getElementById("de_cache").style.display = "none"
+    document.getElementById("de_inferno").style.display = "none"
+    actualMap = "de_nuke"
+     document.getElementById("mapNameOnTop").innerText = actualMap;
+}
+
 
 function set_up()
 { 
@@ -134,6 +153,9 @@ function showmap()
 }
 function showmapAndNoRedMarks()
 {
+    if(show_marks_on_map){
+
+    
     if(show_red_marks_on_map)
     {
         for (var i = 0; i < trd.length; i ++) 
@@ -149,4 +171,5 @@ else
      show_marks_on_map = false;
      showmap()
    }
+}
 }
