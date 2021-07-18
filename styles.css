@@ -36,6 +36,8 @@ body
 {
     background-color: BCEBCB;
     float: left;
+    margin-top: auto;
+    clear: both;
     height: 100%;
     min-height: 100%;
     width: 20%;
@@ -182,7 +184,9 @@ input, button
 #showmap
 {
     background-color: darkgreen;
-    height: 8%;
+    height: 40%;
+    margin-top: 1%;
+    margin-bottom: 1%;
     color: wheat;
     font-size: 20px;
 }
@@ -207,6 +211,7 @@ input, button
 .choose_map_button
 {
     background-color: 87D68D;
+    margin-top: 4%;
     height: 30px;
     font-size: larger;
     font-weight: bold;
@@ -236,4 +241,12 @@ input, button
     background-color: darkblue;
     text-shadow: 2px 2px #000000;
     
+}
+
+.map_settings_buttons
+{
+    height: 20%;
+    margin-top: 15%;
+    display: block;
+    float: left;
 }
