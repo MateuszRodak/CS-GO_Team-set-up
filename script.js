@@ -8,6 +8,8 @@ function de_dust2()
     document.getElementById("de_inferno").style.display = "none"
     document.getElementById("de_dust2").style.display = "block"
     actualMap = "de_dust2"
+    document.getElementById("mapNameOnTop").innerText = actualMap;
+    
 }
 
 function de_mirage()
@@ -18,6 +20,7 @@ function de_mirage()
     document.getElementById("de_cache").style.display = "none"
     document.getElementById("de_inferno").style.display = "none"
     actualMap = "de_mirage"
+    document.getElementById("mapNameOnTop").innerText = actualMap;
 }
 
 function de_train()
@@ -28,6 +31,7 @@ function de_train()
     document.getElementById("de_cache").style.display = "none"
     document.getElementById("de_inferno").style.display = "none"
     actualMap = "de_train"
+    document.getElementById("mapNameOnTop").innerText = actualMap;
 }
 
 function de_cache()
@@ -38,6 +42,7 @@ function de_cache()
     document.getElementById("de_cache").style.display = "block"
     document.getElementById("de_inferno").style.display = "none"
     actualMap = "de_cache"
+    document.getElementById("mapNameOnTop").innerText = actualMap;
 }
 
 function de_inferno()
@@ -48,6 +53,7 @@ function de_inferno()
     document.getElementById("de_cache").style.display = "none"
     document.getElementById("de_inferno").style.display = "block"
     actualMap = "de_inferno"
+     document.getElementById("mapNameOnTop").innerText = actualMap;
 }
 
 function set_up()
@@ -86,6 +92,9 @@ function set_up()
 
 function changeColor(num1, num2, num3, num4, num5)
 {
+    show_marks_on_map = false;
+    show_red_marks_on_map = true;
+    showmap()
 
     for (var i = 0; i < trd.length; i ++) 
     {
@@ -102,6 +111,7 @@ function changeColor(num1, num2, num3, num4, num5)
 
 var trd = document.getElementsByClassName('trd');
 var show_marks_on_map = true;
+var show_red_marks_on_map = true;
 
 function showmap()
 {
@@ -121,4 +131,22 @@ function showmap()
                     }
                 show_marks_on_map=true;
             }
+}
+function showmapAndNoRedMarks()
+{
+    if(show_red_marks_on_map)
+    {
+        for (var i = 0; i < trd.length; i ++) 
+            {
+                if(trd[i].style.borderTopColor == "red")
+                trd[i].style.display = 'none';
+            }
+        show_red_marks_on_map = false;
+    }
+else
+   {
+     show_red_marks_on_map = true;
+     show_marks_on_map = false;
+     showmap()
+   }
 }
