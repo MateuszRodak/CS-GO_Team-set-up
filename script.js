@@ -117,14 +117,24 @@ function changeColor(num1, num2, num3, num4, num5)
 
     for (var i = 0; i < trd.length; i ++) 
     {
-        trd[i].style.borderTopColor = "red"
+        trd[i].style.borderTopColor = "red";
+        trd[i].style.display = 'none';
     }
 
     document.getElementsByClassName(actualMap)[num1].style.borderTopColor = "blue"
+    document.getElementsByClassName(actualMap)[num1].style.display = 'block';
+
     document.getElementsByClassName(actualMap)[num2].style.borderTopColor = "purple"
+    document.getElementsByClassName(actualMap)[num2].style.display = 'block';
+    
     document.getElementsByClassName(actualMap)[num3].style.borderTopColor = "yellow"
+    document.getElementsByClassName(actualMap)[num3].style.display = 'block';
+
     document.getElementsByClassName(actualMap)[num4].style.borderTopColor = "green"
+    document.getElementsByClassName(actualMap)[num4].style.display = 'block';
+
     document.getElementsByClassName(actualMap)[num5].style.borderTopColor = "orange"
+    document.getElementsByClassName(actualMap)[num5].style.display = 'block';
     
 }
 
@@ -134,42 +144,41 @@ var show_red_marks_on_map = true;
 
 function showmap()
 {
-        if(show_marks_on_map)
-            {
-                for (var i = 0; i < trd.length; i ++) 
-                    {
-                        trd[i].style.display = 'none';
-                    }
-                show_marks_on_map = false;
-            }
-        else
-            {
-                for (var i = 0; i < trd.length; i ++) 
-                    {
-                        trd[i].style.display = 'block';
-                    }
-                show_marks_on_map=true;
-            }
+    if(show_marks_on_map)
+    {
+        for (var i = 0; i < trd.length; i ++) 
+        {
+            trd[i].style.display = 'none';
+        }
+        show_marks_on_map = false;
+    }
+    else
+    {
+        for (var i = 0; i < trd.length; i ++) 
+        {
+            trd[i].style.display = 'block';
+        }
+        show_marks_on_map=true;
+    }
 }
+
 function showmapAndNoRedMarks()
 {
     if(show_marks_on_map){
-
-    
-    if(show_red_marks_on_map)
-    {
-        for (var i = 0; i < trd.length; i ++) 
+        if(show_red_marks_on_map)
+        {
+            for (var i = 0; i < trd.length; i ++) 
             {
                 if(trd[i].style.borderTopColor == "red")
                 trd[i].style.display = 'none';
             }
-        show_red_marks_on_map = false;
+            show_red_marks_on_map = false;
+        }
+        else
+        {
+            show_red_marks_on_map = true;
+            show_marks_on_map = false;
+            showmap()
+        }
     }
-else
-   {
-     show_red_marks_on_map = true;
-     show_marks_on_map = false;
-     showmap()
-   }
-}
 }
