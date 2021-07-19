@@ -20,7 +20,7 @@ body
 
 #head
 {
-    height: 10%;
+    height: 6%;
     min-height: 60px;
 }
 
@@ -45,7 +45,7 @@ body
 
 #map
 {
-    
+    margin-top: -2.5%;
     background-color: 4A5859;
     float: left;
     height: 100%;
@@ -241,6 +241,7 @@ input, button
     display: block;
     text-align: center;
     text-shadow: 2px 2px #000000;
+    padding: 10px;
 }
 
 .map_settings_buttons
