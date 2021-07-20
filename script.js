@@ -10,7 +10,6 @@ function de_dust2()
     document.getElementById("de_dust2").style.display = "block"
     actualMap = "de_dust2"
     document.getElementById("mapNameOnTop").innerText = actualMap;
-    
 }
 
 function de_mirage()
@@ -139,8 +138,8 @@ function changeColor(num1, num2, num3, num4, num5)
 }
 
 var trd = document.getElementsByClassName('trd');
-var show_marks_on_map = true;
-var show_red_marks_on_map = true;
+var show_marks_on_map = false;
+var show_red_marks_on_map = false;
 
 function showmap()
 {

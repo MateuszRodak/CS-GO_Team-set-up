@@ -11,8 +11,8 @@ body
 #page
 {
     background-color: 4A5859;
-    height: 80%;
-    min-height: 80%;
+    height: 84%;
+    min-height: 84%;
     padding: 2%;
     margin-left: 8%;
     margin-right: 8%;
@@ -20,7 +20,7 @@ body
 
 #head
 {
-    height: 6%;
+    height: 7%;
     min-height: 60px;
 }
 
@@ -40,7 +40,7 @@ body
     clear: both;
     height: 100%;
     min-height: 100%;
-    width: 20%;
+    width: 25%;
 }
 
 #map
@@ -56,6 +56,7 @@ body
 img
 {   
     width: 100%;
+    margin-top: auto;
     object-fit: scale-down;
 }
 
@@ -90,7 +91,7 @@ input
     float: left;
     height: 100%;
     min-height: 100%;
-    width: 30%;
+    width: 25%;
 }
 
 #de_dust2
@@ -247,7 +248,8 @@ input, button
 .map_settings_buttons
 {
     height: 20%;
-    margin-top: 15%;
+    margin-top: 8%;
+    margin-bottom: 2%;
     display: block;
     float: left;
 }
