@@ -1,77 +1,22 @@
 var actualMap = "de_mirage"
 
-function de_dust2()
+function mapChooseDisplay(map)
 {
     document.getElementById("de_nuke").style.display = "none"
     document.getElementById("de_mirage").style.display = "none"
     document.getElementById("de_train").style.display = "none"
     document.getElementById("de_cache").style.display = "none"
     document.getElementById("de_inferno").style.display = "none"
-    document.getElementById("de_dust2").style.display = "block"
-    actualMap = "de_dust2"
+    document.getElementById("de_dust2").style.display = "none"
+    document.getElementById("de_overpass").style.display = "none"
+    document.getElementById("de_vertigo").style.display = "none"
+
+    actualMap = map
     document.getElementById("mapNameOnTop").innerText = actualMap;
+
+    document.getElementById(map).style.display = "block"
 }
 
-function de_mirage()
-{
-    document.getElementById("de_nuke").style.display = "none"
-    document.getElementById("de_mirage").style.display = "block"
-    document.getElementById("de_train").style.display = "none"
-    document.getElementById("de_dust2").style.display = "none"
-    document.getElementById("de_cache").style.display = "none"
-    document.getElementById("de_inferno").style.display = "none"
-    actualMap = "de_mirage"
-    document.getElementById("mapNameOnTop").innerText = actualMap;
-}
-
-function de_train()
-{
-    document.getElementById("de_nuke").style.display = "none"
-    document.getElementById("de_mirage").style.display = "none"
-    document.getElementById("de_dust2").style.display = "none"
-    document.getElementById("de_train").style.display = "block"
-    document.getElementById("de_cache").style.display = "none"
-    document.getElementById("de_inferno").style.display = "none"
-    actualMap = "de_train"
-    document.getElementById("mapNameOnTop").innerText = actualMap;
-}
-
-function de_cache()
-{
-    document.getElementById("de_nuke").style.display = "none"
-    document.getElementById("de_mirage").style.display = "none"
-    document.getElementById("de_dust2").style.display = "none"
-    document.getElementById("de_train").style.display = "none"
-    document.getElementById("de_cache").style.display = "block"
-    document.getElementById("de_inferno").style.display = "none"
-    actualMap = "de_cache"
-    document.getElementById("mapNameOnTop").innerText = actualMap;
-}
-
-function de_inferno()
-{
-    document.getElementById("de_nuke").style.display = "none"
-    document.getElementById("de_mirage").style.display = "none"
-    document.getElementById("de_dust2").style.display = "none"
-    document.getElementById("de_train").style.display = "none"
-    document.getElementById("de_cache").style.display = "none"
-    document.getElementById("de_inferno").style.display = "block"
-    actualMap = "de_inferno"
-     document.getElementById("mapNameOnTop").innerText = actualMap;
-}
-
-
-function de_nuke()
-{
-    document.getElementById("de_nuke").style.display = "block"
-    document.getElementById("de_mirage").style.display = "none"
-    document.getElementById("de_dust2").style.display = "none"
-    document.getElementById("de_train").style.display = "none"
-    document.getElementById("de_cache").style.display = "none"
-    document.getElementById("de_inferno").style.display = "none"
-    actualMap = "de_nuke"
-     document.getElementById("mapNameOnTop").innerText = actualMap;
-}
 
 
 function set_up()

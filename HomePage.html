@@ -16,15 +16,15 @@
 
         <div id="choosemap">
             <div class="map_choose_head">Pick a map cowboy:</div>
-            <button type="button" class="choose_map_button" onclick=de_mirage()>de_mirage</button>
-            <button type="button" class="choose_map_button" onclick=de_dust2()>de_dust2</button>
-            <button type="button" class="choose_map_button" onclick=de_train()>de_train</button>
-            <button type="button" class="choose_map_button" onclick=de_cache()>de_cache</button>
-            <button type="button" class="choose_map_button" onclick=de_inferno()>de_inferno</button>
-            <button type="button" class="choose_map_button" onclick=de_nuke()>de_nuke</button>
-            <button type="button" class="choose_map_button" >de_overpass</button>
+            <button type="button" class="choose_map_button" onclick="mapChooseDisplay('de_mirage')">de_mirage</button>
+            <button type="button" class="choose_map_button" onclick="mapChooseDisplay('de_dust2')">de_dust2</button>
+            <button type="button" class="choose_map_button" onclick="mapChooseDisplay('de_train')">de_train</button>
+            <button type="button" class="choose_map_button" onclick="mapChooseDisplay('de_cache')">de_cache</button>
+            <button type="button" class="choose_map_button" onclick="mapChooseDisplay('de_inferno')">de_inferno</button>
+            <button type="button" class="choose_map_button" onclick="mapChooseDisplay('de_nuke')">de_nuke</button>
+            <button type="button" class="choose_map_button" onclick="mapChooseDisplay('de_overpass')">de_overpass</button>
             <button type="button" class="choose_map_button" >de_ancient</button>
-            <button type="button" class="choose_map_button" >de_vertigo</button>
+            <button type="button" class="choose_map_button" onclick="mapChoose('de_vertigo')">de_vertigo</button>
             <div class="map_settings_buttons">
                 <button type="button" id="showmap" onclick=showmap() >hide/show all markers</button>
                 <button type="button" id="showmap" onclick=showmapAndNoRedMarks() >hide/show red markers</button>
@@ -65,22 +65,26 @@
 
             
             <div id="de_train">
-                <img src="maps/de_train.jpeg" alt="de_train">
-                <div class="trd de_train" style="top:37%; left:70%;"></div> <!-- rafters-->
-                <div class="trd de_train" style="top:62%; left:38%;"></div> <!-- down ladder-->
-                <div class="trd de_train" style="top:42%; left:81%;"></div> <!-- ivy-->
-                <div class="trd de_train" style="top:83%; left:38%;"></div> <!-- B close-->
-                <div class="trd de_train" style="top:71%; left:72%;"></div> <!-- connector-->
-                <div class="trd de_train" style="top:96%; left:70%;"></div> <!-- cloud-->
+                <img src="maps/de_train2.png" alt="de_train">
+                <div class="trd de_train" style="top:35%; left:69%;"></div> <!-- t-hell-->
+                <div class="trd de_train" style="top:56%; left:38%;"></div> <!-- down ladder-->
+                <div class="trd de_train" style="top:37%; left:78%;"></div> <!-- ivy-->
+                <div class="trd de_train" style="top:68%; left:42%;"></div> <!-- B close ramp-->
+                <div class="trd de_train" style="top:60%; left:62%;"></div> <!-- connector-->
+                <div class="trd de_train" style="top:84%; left:70%;"></div> <!-- cloud-->
             </div>
 
             <div id="de_cache">
                 <img src="maps/de_cache.jpg" alt="de_cache">
                 <div class="trd de_cache" style="top:66.5%; left:40%;"></div> <!-- chceckers-->
-                <div class="trd de_cache" style="top:66.5%; left:40%;"></div> <!-- chceckers-->
-                <div class="trd de_cache" style="top:66.5%; left:40%;"></div> <!-- chceckers-->
-                <div class="trd de_cache" style="top:66.5%; left:40%;"></div> <!-- chceckers-->
-                <div class="trd de_cache" style="top:66.5%; left:40%;"></div> <!-- chceckers-->
+                <div class="trd de_cache" style="top:73%; left:30%;"></div> <!-- fenix-->
+                <div class="trd de_cache" style="top:80%; left:33%;"></div> <!-- B site-->
+                <div class="trd de_cache" style="top:61%; left:31%;"></div> <!-- window-->
+                <div class="trd de_cache" style="top:52%; left:36%;"></div> <!-- whitebox-->
+                <div class="trd de_cache" style="top:64%; left:49%;"></div> <!-- vents-->
+                <div class="trd de_cache" style="top:37%; left:42%;"></div> <!-- haven-->
+                <div class="trd de_cache" style="top:22%; left: 39.5%;"></div> <!-- NBK-->
+                <div class="trd de_cache" style="top:23.5%; left:32%;"></div> <!-- QUAD-->
             </div>
 
             <div id="de_inferno">
@@ -98,14 +102,34 @@
 
             <div id="de_nuke">
                 <img src="maps/de_nuke.jpg" alt="de_nuke">
-                <div class="trd de_nuke" style="top:32%; left:42%;"></div> <!-- B site-->
-                <div class="trd de_nuke" style="top:32%; left:42%;"></div> <!-- B site-->
-                <div class="trd de_nuke" style="top:32%; left:42%;"></div> <!-- B site-->
-                <div class="trd de_nuke" style="top:32%; left:42%;"></div> <!-- B site-->
-                <div class="trd de_nuke" style="top:32%; left:42%;"></div> <!-- B site-->
+                <div class="trd de_nuke" style="top:39%; left:62.5%;"></div> <!-- admin-->
+                <div class="trd de_nuke" style="top:64%; left:72%;"></div> <!-- garage-->
+                <div class="trd de_nuke" style="top:53%; left:53%;"></div> <!-- hut-->
+                <div class="trd de_nuke" style="top:45%; left:61%;"></div> <!-- admin-->
+                <div class="trd de_nuke" style="top:73%; left:64%;"></div> <!-- phoenix -->
+                <div class="trd de_nuke" style="top:31%; left:55%;"></div> <!-- ramp-->
             </div>
 
+            <div id="de_overpass">
+                <img src="maps/de_overpass.png" alt="de_overpass">
+                <div class="trd de_overpass" style="top:39%; left:62.5%;"></div> <!-- admin-->
+                <div class="trd de_overpass" style="top:64%; left:72%;"></div> <!-- garage-->
+                <div class="trd de_overpass" style="top:53%; left:53%;"></div> <!-- hut-->
+                <div class="trd de_overpass" style="top:45%; left:61%;"></div> <!-- admin-->
+                <div class="trd de_overpass" style="top:73%; left:64%;"></div> <!-- phoenix -->
+                <div class="trd de_overpass" style="top:31%; left:55%;"></div> <!-- ramp-->
+            </div>
 
+            <div id="de_vertigo">
+                <img src="maps/de_vertigo-Upper.png" alt="de_vertigo-Upper">
+                <img src="maps/de_vertigo-Lower.png" alt="de_vertigo-Lower">
+                <div class="trd de_vertigo" style="top:39%; left:62.5%;"></div> <!-- admin-->
+                <div class="trd de_vertigo" style="top:64%; left:72%;"></div> <!-- garage-->
+                <div class="trd de_vertigo" style="top:53%; left:53%;"></div> <!-- hut-->
+                <div class="trd de_vertigo" style="top:45%; left:61%;"></div> <!-- admin-->
+                <div class="trd de_vertigo" style="top:73%; left:64%;"></div> <!-- phoenix -->
+                <div class="trd de_vertigo" style="top:31%; left:55%;"></div> <!-- ramp-->
+            </div>
 
         </div>
         

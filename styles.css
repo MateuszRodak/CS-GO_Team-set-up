@@ -130,6 +130,18 @@ input
     display: none;
 }
 
+#de_overpass
+{
+    position: relative;
+    display: none;
+}
+
+#de_vertigo
+{
+    position: relative;
+    display: none;
+}
+
 .button
 {
     clear: both;
