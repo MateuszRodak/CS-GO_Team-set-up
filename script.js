@@ -10,6 +10,7 @@ function mapChooseDisplay(map)
     document.getElementById("de_dust2").style.display = "none"
     document.getElementById("de_overpass").style.display = "none"
     document.getElementById("de_vertigo").style.display = "none"
+    document.getElementById("de_ancient").style.display = "none"
 
     actualMap = map
     document.getElementById("mapNameOnTop").innerText = actualMap;

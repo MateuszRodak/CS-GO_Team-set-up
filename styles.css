@@ -147,6 +147,12 @@ input
     display: none;
 }
 
+#de_ancient
+{
+    position: relative;
+    display: none;
+}
+
 .button
 {
     clear: both;
