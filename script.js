@@ -64,6 +64,7 @@ function changeColor(num1, num2, num3, num4, num5)
     {
         trd[i].style.borderTopColor = "red";
         trd[i].style.display = 'none';
+        trd[i].innerText = "";
     }
 
     document.getElementsByClassName(actualMap)[num1].style.borderTopColor = "blue"
@@ -109,6 +110,7 @@ function showmap()
             trd[i].style.display = 'block';
         }
         show_marks_on_map=true;
+
     }
 }
 

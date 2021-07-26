@@ -45,6 +45,7 @@ body
 
 #map
 {
+    position: relative;
     margin-top: -2.5%;
     background-color: 4A5859;
     float: left;
@@ -101,55 +102,55 @@ input
 
 #de_dust2
 {
-    position: relative;
+    position: sticky;
     display: none;
 }
 
 #de_mirage
 {
-    position: relative;
+    position: sticky;
     display: block;
 }
 
 #de_train 
 {
-    position: relative;
+    position: sticky;
     display: none;
 }
 
 #de_cache 
 {
-    position: relative;
+    position: sticky;
     display: none;
 }
 
 #de_inferno 
 {
-    position: relative;
+    position: sticky;
     display: none;
 }
 
 #de_nuke 
 {
-    position: relative;
+    position: sticky;
     display: none;
 }
 
 #de_overpass
 {
-    position: relative;
+    position: sticky;
     display: none;
 }
 
 #de_vertigo
 {
-    position: relative;
+    position: sticky;
     display: none;
 }
 
 #de_ancient
 {
-    position: relative;
+    position: sticky;
     display: none;
 }
 
