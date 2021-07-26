@@ -67,18 +67,23 @@ function changeColor(num1, num2, num3, num4, num5)
 
     document.getElementsByClassName(actualMap)[num1].style.borderTopColor = "blue"
     document.getElementsByClassName(actualMap)[num1].style.display = 'block';
+    document.getElementsByClassName(actualMap)[num1].innerText = player3.value;
 
     document.getElementsByClassName(actualMap)[num2].style.borderTopColor = "purple"
     document.getElementsByClassName(actualMap)[num2].style.display = 'block';
+    document.getElementsByClassName(actualMap)[num2].innerText = player1.value;
     
     document.getElementsByClassName(actualMap)[num3].style.borderTopColor = "yellow"
     document.getElementsByClassName(actualMap)[num3].style.display = 'block';
+    document.getElementsByClassName(actualMap)[num3].innerText = player5.value;
 
     document.getElementsByClassName(actualMap)[num4].style.borderTopColor = "green"
     document.getElementsByClassName(actualMap)[num4].style.display = 'block';
+    document.getElementsByClassName(actualMap)[num4].innerText = player2.value;
 
     document.getElementsByClassName(actualMap)[num5].style.borderTopColor = "orange"
     document.getElementsByClassName(actualMap)[num5].style.display = 'block';
+    document.getElementsByClassName(actualMap)[num5].innerText = player4.value;
     
 }
 
